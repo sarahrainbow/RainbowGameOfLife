@@ -9,7 +9,7 @@ public class GameControls : MonoBehaviour {
         gameToStart.GameRunning = true;
 
         // Start game in {second argument} second(s), then TheGame method is called every {3rd argument} second(s)
-        InvokeRepeating("CallTheGameFunction", 0.0f, 0.15f);
+        InvokeRepeating("CallTheGameFunction", 0.0f, 0.75f);
 
     }
 

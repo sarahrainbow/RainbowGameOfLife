@@ -4,10 +4,11 @@ using UnityEngine;
 public class Game : MonoBehaviour
 {
 
-    private int gameSize = 37;
+    private int gameSize = 34;
     [SerializeField] private Cell cellPrefab;
     public List<Cell> cells = new List<Cell>();
     public bool GameRunning { get; set; }
+
 
     private void InstantiateCells()
     {
