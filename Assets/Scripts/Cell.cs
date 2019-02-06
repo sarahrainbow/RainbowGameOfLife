@@ -1,18 +1,16 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using System;
+﻿using System.Collections.Generic;
 using UnityEngine;
 
 public class Cell : MonoBehaviour
 {
+    private Renderer cellRenderer;
+    private List<Color> cellColors = new List<Color>();
+    
     public bool IsAlive { get; set; }
-    public bool NextIsAliveState;
-    public Vector2 CellPosition;
-    public Renderer CellRenderer;
-    public int AliveNeighbours;
-    public Color NextCellColor;
-    public int TimesBeenAlive;
-    private Color[] ColorArray = { Color.red, Color.yellow, Color.green, Color.blue, Color.magenta };
+    public bool NextCellState { get; set; }
+    public Vector2 CellPosition { get; set; }
+    public int AliveNeighbours { get; set; }
+    public int GenerationsSurvived { get; set; }
 
 
     private void OnMouseDown()
@@ -20,29 +18,39 @@ public class Cell : MonoBehaviour
         IsAlive = !IsAlive;
     }
 
-    void Start()
+    private void Start()
     {
+        cellRenderer = GetComponent<Renderer>();
         CellPosition = this.transform.position;
-        TimesBeenAlive = 0;
+        GenerationsSurvived = 0;
+
+        Color[] colors = { Color.red, Color.yellow, Color.green, Color.blue, Color.magenta };
+        cellColors.AddRange(colors);
 
     }
 
-    void Update()
+    private void Update()
     {
-
-
 
         if (IsAlive)
         {
 
-
-            CellRenderer.material.color = ColorArray[TimesBeenAlive];
+            cellRenderer.material.color = cellColors[GenerationsSurvived];
         }
         else
         {
-            CellRenderer.material.color = Color.gray;
+            cellRenderer.material.color = Color.white;
         }
         
+    }
+
+    public void Promote()
+    {
+        if (GenerationsSurvived < cellColors.Count - 1)
+        {
+            GenerationsSurvived++;
+        }
+
     }
 
 }

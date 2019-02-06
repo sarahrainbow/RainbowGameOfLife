@@ -78,10 +78,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f9e167eae42fa4df2a3e53bb2c32c8dc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  CellPosition: {x: 0, y: 0}
-  CellRenderer: {fileID: 212951599826888304}
-  NextIsAliveState: 0
-  AliveNeighbours: 0
+  nextIsAliveState: 0
+  cellPosition: {x: 0, y: 0}
+  cellRenderer: {fileID: 0}
+  aliveNeighbours: 0
+  timesBeenAlive: 0
 --- !u!212 &212951599826888304
 SpriteRenderer:
   m_ObjectHideFlags: 1
