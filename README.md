@@ -51,7 +51,7 @@ When you click on a dead cell, or it has two or three alive neighbours, your bab
 
 If your baby cell is lucky enough to have a solid support network to care for it, but not so many it is smothered, it will then evolve to become a bright-eyed, yellow child.
 
-### ![teenRect](/Users/Rainbow/Developer/RainbowGameOfLife/Assets/Graphics/ReadMeImages/teenRect.png) The teen
+### ![teenRect](./Assets/Graphics/ReadMeImages/teenRect.png) The teen
 
 Life is unfair and they know it. With a loving support network (but not too much) your child cell can develop into a moody, but alive, teenager.
 
@@ -78,4 +78,3 @@ You can view the main files of code by clicking on the links below:
 [Game.cs](https://github.com/sarahrainbow/RainbowGameOfLife/blob/master/Assets/Scripts/Game.cs)
 
 [GameControls.cs](https://github.com/sarahrainbow/RainbowGameOfLife/blob/master/Assets/Scripts/GameControls.cs)
-
