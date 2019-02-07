@@ -37,7 +37,7 @@ If a cell has a lonely surrounding of just one or no neighbouring living cells t
 
 #### Smothered
 
-If the cell is smothered by four or more alive neighbour cells, they will die.
+If the cell is smothered by having four or more alive neighbour cells, they will die.
 
 ### 3.2 Cell evolution
 
