@@ -29,7 +29,7 @@ A colourful version of the Game of Life.
 
 #### A solid support network
 
-Cells need a support network of two or three alive neighbour cells to survive, 
+Cells need a support network of two or three alive neighbour cells to survive.
 
 #### Lonely
 
