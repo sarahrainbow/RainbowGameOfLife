@@ -43,11 +43,11 @@ If the cell is smothered by four or more alive neighbour cells, they will die.
 
 The cells move through the colours of the rainbow as they evolve through their lifecycle.
 
-### ![babyRect](/Users/Rainbow/Developer/RainbowGameOfLife/Assets/Graphics/ReadMeImages/babyRect.png)  The baby
+### ![babyRect](./Assets/Graphics/ReadMeImages/babyRect.png)  The baby
 
 When you click on a dead cell, or it has two or three alive neighbours, your baby cell takes its first breath.
 
-### ![childRect](/Users/Rainbow/Developer/RainbowGameOfLife/Assets/Graphics/ReadMeImages/childRect.png) The child
+### ![childRect](./Assets/Graphics/ReadMeImages/childRect.png) The child
 
 If your baby cell is lucky enough to have a solid support network to care for it, but not so many it is smothered, it will then evolve to become a bright-eyed, yellow child.
 
@@ -55,15 +55,15 @@ If your baby cell is lucky enough to have a solid support network to care for it
 
 Life is unfair and they know it. With a loving support network (but not too much) your child cell can develop into a moody, but alive, teenager.
 
-### ![adultRect](/Users/Rainbow/Developer/RainbowGameOfLife/Assets/Graphics/ReadMeImages/adultRect.png) The adult
+### ![adultRect](./Assets/Graphics/ReadMeImages/adultRect.png) The adult
 
 A fully fledged adult cell makes its way into the world. The adult cell has now survived three evolutions and has learnt a lot, hopefully it won't get lonely or smothered so it can reach the final stage in its evolution.
 
-### ![oapRect](/Users/Rainbow/Developer/RainbowGameOfLife/Assets/Graphics/ReadMeImages/oapRect.png) The OAP
+### ![oapRect](./Assets/Graphics/ReadMeImages/oapRect.png) The OAP
 
 These cells have really got some stories to tell from their long lives on the board. Unlike in real life, some cells really can live forever if they have a solid support network and constantly nurturing surroundings.
 
-### ![deadRect](/Users/Rainbow/Developer/RainbowGameOfLife/Assets/Graphics/ReadMeImages/deadRect.png) The dead
+### ![deadRect](./Assets/Graphics/ReadMeImages/deadRect.png) The dead
 
 Without a solid support network, getting too lonely or smothered our cells will die :-(  This can happen at any stage in their evolution. On the plus side, you can turn a cell from dead to alive with just a click of the mouse!
 
