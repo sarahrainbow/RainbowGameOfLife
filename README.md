@@ -5,13 +5,13 @@ A colourful version of the Game of Life.
 
 ### 1.1 For Mac
 
-  		1. Download this file
-  		2. Run the file
+  		1. Download `RainbowGameOfLife.app`  located [here](https://github.com/sarahrainbow/RainbowGameOfLife/tree/master/Builds/Mac)
+  		2. Run the file `RainbowGameOfLife.app`
 
 ### 1.2 For Windows
 
-1. Download this folder
-2. Run the file
+1. Download `RainbowGameOfLife_x86`  located [here](https://github.com/sarahrainbow/RainbowGameOfLife/tree/master/Builds/Windows/x86) (and its contents)
+2. Run the enclosed file `SarahRainbowGameOfLife.exe`
 
 
 
