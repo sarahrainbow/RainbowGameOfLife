@@ -4,11 +4,9 @@ using UnityEngine;
 public class Game : MonoBehaviour
 {
 
-    private int gameSize = 34;
+    private int gameSize = 32;
     [SerializeField] private Cell cellPrefab;
     public List<Cell> cells = new List<Cell>();
-    public bool GameRunning { get; set; }
-
 
     private void InstantiateCells()
     {
@@ -27,9 +25,8 @@ public class Game : MonoBehaviour
     {
         InstantiateCells();
 
-        int totalCells = gameSize * gameSize;
-
         #if DEBUG
+        int totalCells = gameSize * gameSize;
         for (int i = 0; i < totalCells; i++)
         {
             cells[i].name = "cell " + i;
@@ -39,9 +36,6 @@ public class Game : MonoBehaviour
 
     public void TheGame()
     {
-        if(GameRunning)
-        {
-
         foreach (Cell cell in cells)
         {
             cell.AliveNeighbours = FindNumberOfAliveNeighbours(cell);
@@ -80,8 +74,6 @@ public class Game : MonoBehaviour
 
         }
             SetNextState();
-
-        }
     }
 
 
