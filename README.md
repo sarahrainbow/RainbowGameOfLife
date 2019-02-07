@@ -35,7 +35,7 @@ Cells need a support network of two or three alive neighbour cells to survive.
 
 If a cell has a lonely surrounding of just one or no neighbouring living cells they will die.
 
-#### Smothering
+#### Smothered
 
 If the cell is smothered by four or more alive neighbour cells, they will die.
 
