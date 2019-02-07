@@ -71,7 +71,7 @@ Without a solid support network, getting too lonely or smothered our cells will 
 
 ### 4. Important files
 
-You can view the main files of code by clicking on the links below:
+The code I have written for this game is contained within the files below:
 
 [Cell.cs](https://github.com/sarahrainbow/RainbowGameOfLife/blob/master/Assets/Scripts/Cell.cs)
 
