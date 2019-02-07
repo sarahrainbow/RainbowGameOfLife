@@ -1,16 +1,19 @@
 ﻿using UnityEngine;
+using UnityEngine.UI;
 
 public class GameControls : MonoBehaviour {
 
-    [SerializeField] private Game gameToStart;
-    [SerializeField] private Camera MainCamera;
-    private int ZoomAmount = 1;
-    private int MinZoom = 5;
-    private int MaxZoom = 20;
+    [SerializeField] private Game gameToControl;
+    [SerializeField] private Camera mainCamera;
+    [SerializeField] private Button startButton;
+    private bool gameStarted;
+    private int zoomAmount = 1;
+    private int minZoom = 5;
+    private int maxZoom = 20;
 
     public void StartGame()
     {
-        //gameToStart.GameRunning = true;
+        startButton.interactable = false;
 
         // Start game in {second argument} second(s), then TheGame method is called every {3rd argument} second(s)
         InvokeRepeating("CallTheGameFunction", 0.0f, 0.75f);
@@ -19,18 +22,19 @@ public class GameControls : MonoBehaviour {
 
     private void CallTheGameFunction()
     {
-        gameToStart.TheGame();
+        gameToControl.TheGame();
     }
 
     public void StopGame()
     {
-        //gameToStart.GameRunning = false;
+        startButton.interactable = true;
         CancelInvoke("CallTheGameFunction");
+
     }
 
     public void ClearBoard()
     {
-        foreach (Cell cell in gameToStart.cells)
+        foreach (Cell cell in gameToControl.cells)
         {
             cell.IsAlive = false;
             cell.GenerationsSurvived = 0;
@@ -41,18 +45,18 @@ public class GameControls : MonoBehaviour {
     public void ZoomIn()
     {
 
-        if (MainCamera.orthographicSize <= MaxZoom && MainCamera.orthographicSize > MinZoom)
+        if (mainCamera.orthographicSize <= maxZoom && mainCamera.orthographicSize > minZoom)
         {
-            MainCamera.orthographicSize = MainCamera.orthographicSize - ZoomAmount;
+            mainCamera.orthographicSize = mainCamera.orthographicSize - zoomAmount;
         }
 
     }
 
     public void ZoomOut()
     {
-        if (MainCamera.orthographicSize < MaxZoom && MainCamera.orthographicSize >= MinZoom)
+        if (mainCamera.orthographicSize < maxZoom && mainCamera.orthographicSize >= minZoom)
         {
-            MainCamera.orthographicSize += ZoomAmount;
+            mainCamera.orthographicSize += zoomAmount;
         }
 
     }
